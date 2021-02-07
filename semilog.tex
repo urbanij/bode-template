@@ -2,21 +2,18 @@
 % Sun Feb 07 2021 03:59:33 pm CET
 % Francesco Urbani ft. https://tex.stackexchange.com/a/98981
 
+
 \documentclass[border=2mm]{standalone}
+%\documentclass[]{article}
+
 \usepackage{pgfplots}
+\usepackage{pgffor} % allows for loops
+\usepackage{tikzscale}
 
 \begin{document}
-\begin{tikzpicture}
-\begin{axis}[
-	ytick distance={5},
-    xmode=log,
-    xmin=1e-2, xmax=1e6,
-    ymin=-20, ymax=50,
-    grid=both,
-    major grid style={black!50},
-    yticklabel=\empty,
-    xticklabel=\empty,
-]
-\end{axis}
-\end{tikzpicture}
+
+\foreach \n in {0,...,0}{
+	\includegraphics[]{semilog.tikz}
+}
+
 \end{document}

@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+\begin{axis}[
+	ytick distance={5},
+    xmode=log,
+    xmin=1e-2, xmax=1e7,
+    ymin=-20, ymax=50,
+    grid=both,
+    major grid style={line width=.12pt, black!50},
+	minor grid style={line width=.12pt, black!50},		
+    yticklabel=\empty,
+    xticklabel=\empty,
+]
+\end{axis}
+\end{tikzpicture} 
