@@ -1,0 +1,7 @@
+Generate semilog grid suitable for pen and 
+paper Bode plots.
+
+
+Modify the `.tex` file to your taste and 
+run `pdflatex semilog.tex` (assuming you have pdflatex,
+tex and everything installed) to generate the pdf.
