@@ -1,11 +1,8 @@
-Generate semilog grid suitable for pen and 
-paper Bode plots.
-
+Generate semilog grid suitable for pen and  paper Bode plots.
 
 Edit the `semilog.tikz` according to your taste and 
 run `pdflatex semilog.tex` (assuming you have pdflatex,
 tex and everything installed) to generate the pdf.
 
-
 An ouput example is this one: 
-	https://github.com/urbanij/bode-template/blob/main/bode_template_9_dec.pdf
+  https://github.com/urbanij/bode-template/blob/main/bode_template.pdf
