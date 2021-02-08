@@ -1,13 +1,17 @@
-\documentclass{article}
+\documentclass[10pt,a4paper]{article}
 
+\usepackage[all]{background}
 \usepackage[utf8]{inputenc}
-\usepackage{pgffor} % allows for loops
+
+\usepackage{url}
+
+\usepackage{pgffor} % loops
 \usepackage{graphicx}
 \usepackage{geometry}
 \usepackage[hidelinks]{hyperref}
-\usepackage[dvipsnames]{xcolor}
 
-\definecolor{mygray}{RGB}{216,216,216}
+% \usepackage[dvipsnames]{xcolor}
+% \definecolor{mygray}{RGB}{216,216,216}
 
 \geometry {
     a4paper,
@@ -18,15 +22,16 @@
     bottom=5mm
 }
 
+\SetBgContents{\url{https://github.com/urbanij/bode-template}}
+\SetBgPosition{current page.east}% Select location
+\SetBgVshift{-1.4cm}% Add vertical shift (results in a shift in x direction due to rotation)
+\SetBgOpacity{0.40}% Select opacity
+\SetBgAngle{-90.0}% Select rotation of logo
+\SetBgScale{1.0}% Select scale factor of logo
+
 
 \begin{document}
     
-    \small 
-    \centering 
-    \textcolor{mygray}{
-        \href{https://github.com/urbanij/bode-template}{\texttt{https://github.com/urbanij/bode-template}}
-    }
-
     \foreach \n in {0,...,1}{
         \begin{figure}[h!]
             \centering

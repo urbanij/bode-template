@@ -1,16 +1,16 @@
 \begin{tikzpicture}
-\begin{axis}[
-    axis x line*=bottom,
-    axis y line*=left,
-    ytick distance={5},
-    xmode=log,
-    xmin=1e-2, xmax=1e7,
-    ymin=-40, ymax=50,
-    grid=both,
-    major grid style={line width=.12pt, black!38},
-    minor grid style={line width=.12pt, black!20},      
-    yticklabel=\empty,
-    xticklabel=\empty,
-]
-\end{axis}
+    \begin{axis}[
+        axis x line*=bottom,
+        axis y line*=left,
+        ytick distance={5},
+        xmode=log,
+        xmin=1e-2, xmax=1e7,
+        ymin=-40, ymax=50,
+        grid=both,
+        major grid style={line width=.12pt, black!38},
+        minor grid style={line width=.12pt, black!20},      
+        yticklabel=\empty,
+        xticklabel=\empty,
+    ]
+    \end{axis}
 \end{tikzpicture} 
