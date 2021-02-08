@@ -1,9 +1,8 @@
-Generate semilog grid suitable for pen and  paper Bode plots.
+Generate a semilog grid and, in turn, a Bode plot template PDF
+to be printed, especially suitable for pen and paper assignments.
 
-Edit the `semilog.tikz` according to your taste and 
-run `pdflatex semilog.tex` (assuming you have pdflatex,
-tex and everything installed) to generate the pdf.
+Run `make`, provided that you have LaTeX and everything 
+required installed on your machine.
 
-An ouput example is this one: 
+An example of a PDF can be found here:
 https://bit.ly/39ZomoL
-	
