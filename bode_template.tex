@@ -1,0 +1,37 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{pgffor} % allows for loops
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage[dvipsnames]{xcolor}
+
+\definecolor{mygray}{RGB}{216,216,216}
+
+\geometry {
+    a4paper,
+    total={170mm,257mm},
+    left=10mm,
+    right=10mm,
+    top=10mm,
+    bottom=5mm
+}
+
+
+\begin{document}
+    
+    \small 
+    \centering 
+    \textcolor{mygray}{
+        \href{https://github.com/urbanij/bode-template}{\texttt{https://github.com/urbanij/bode-template}}
+    }
+
+    \foreach \n in {0,...,1}{
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[scale=2.0]{semilog.pdf}
+        \end{figure}
+    }
+
+\end{document}
