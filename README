@@ -4,5 +4,9 @@ to be printed, especially suitable for pen and paper assignments.
 Run `make`, provided that you have LaTeX and everything 
 required installed on your machine.
 
+`semilog.tikz` can be gerated by `setup_plot.cpp`
+but that's not really necessary, you can simply edit what you think
+should be edited by yourself and move on.
+
 An example of a PDF can be found here:
 https://bit.ly/39ZomoL

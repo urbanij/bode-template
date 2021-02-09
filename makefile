@@ -4,3 +4,5 @@ all:
 clean:
 	rm -v -rf *.pdf *.aux *.log *.out
 
+clean_except_pdfs:
+	rm -v -rf *.aux *.log *.out	
