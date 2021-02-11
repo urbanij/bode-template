@@ -1,4 +1,4 @@
-\documentclass[10pt,a4paper]{article}
+\documentclass{article}
 
 \usepackage[all]{background}
 \usepackage[utf8]{inputenc}
@@ -10,6 +10,9 @@
 \usepackage{geometry}
 \usepackage[hidelinks]{hyperref}
 
+\pagenumbering{gobble} % remove page number 
+
+
 % \usepackage[dvipsnames]{xcolor}
 % \definecolor{mygray}{RGB}{216,216,216}
 
@@ -18,8 +21,8 @@
     total={170mm,257mm},
     left=10mm,
     right=10mm,
-    top=10mm,
-    bottom=5mm
+    top=18mm,
+    bottom=18mm
 }
 
 \SetBgContents{
@@ -33,12 +36,20 @@
 
 
 \begin{document}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=2.0]{semilog.pdf}
+    \end{figure}
+    \vfill
+    \begin{figure}
+        \centering
+        \includegraphics[scale=2.0]{semilog.pdf}
+    \end{figure}
     
-    \foreach \n in {0,...,1}{
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[scale=2.0]{semilog.pdf}
-        \end{figure}
-    }
-
+    % \foreach \n in {0,...,1}{
+    %     \begin{figure}[h!]
+    %         \centering
+    %         \includegraphics[scale=2.0]{semilog.pdf}
+    %     \end{figure}
+    % }
 \end{document}

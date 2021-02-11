@@ -1,0 +1,16 @@
+\begin{{tikzpicture}}
+    \begin{{axis}}[
+        axis line style={{draw=none}},                        %% remove axis lines
+        % axis x line*=bottom, % axis y line*=left,         %% sets axis line 
+        ytick distance={{5}},                                 %% sets distance between horizontal line of 5 units
+        xmode=log,
+        xmin=1e-2, xmax=1e{},
+        ymin=-40, ymax={},
+        grid=both,
+        major grid style={{line width=.10pt, black!20}},
+        minor grid style={{line width=.10pt, black!20}},      
+        yticklabel=\empty, xticklabel=\empty,               %% remove x and y labels
+        ticks=none,                                         %% remove little ticks at every axis.
+    ]
+    \end{{axis}}
+\end{{tikzpicture}}

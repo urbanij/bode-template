@@ -1,12 +1,14 @@
 Generate a semilog grid and, in turn, a Bode plot template PDF
 to be printed, especially suitable for pen and paper assignments.
 
-Run `make`, provided that you have LaTeX and everything 
-required installed on your machine.
-
-`semilog.tikz` can be gerated by `setup_plot.cpp`
-but that's not really necessary, you can simply edit what you think
-should be edited by yourself and move on.
-
 An example of a PDF can be found here:
 https://bit.ly/39ZomoL
+
+
+steps:
+
+g++ setup_plot.cpp -O3 -std=c++2a -lfmt         # compile script that generates the tikz "semilog-grid" file
+./a.out                                         # run it
+make                                            # run pdflatex with that template and generate the pdf
+# sh scan_bode.sh
+make clean_except_pdfs                          # clean working files except pdfs.
